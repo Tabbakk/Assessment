@@ -4,7 +4,7 @@
 Coding assessment
 
 
-Assumptions taken for the realization:
+Assumptions made for the realization:
 
 In order for the tree to be valid, the string given in input must, once trimmed, start with a '[' char and end with a ']' char (there may be spaces before and after, thus the once trimmed).
 All values must be separated by a comma, last element (after the closing ']') excluded.
