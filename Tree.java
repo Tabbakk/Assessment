@@ -12,8 +12,10 @@ public class Tree {
 		}
 	}
 	
+	// This method prints the given tree on screen, if it has been verified to be an acceptable input
 	public static void printTree(String input) {
 
+		input=input.trim();
 		String[] elements = input.split(","); // O(n) where n is length of string
 		boolean first = true;
 		int removeIndent = 0; // I introduce this variable to determine if an indent is to be removed or not, and it is an int value and not a boolean so multiple indents can be removed at once 
@@ -48,8 +50,10 @@ public class Tree {
 		
 	}
 	
+	// this method verifies that the input is formatted as to form an acceptable tree
 	public static Boolean verifyTree(String given) {
 		
+		given=given.trim();
 		if(given.charAt(0)=='[' && given.charAt(given.length()-1)==']') {   //If the first and last chars of the string don't open and close the structure, it is invalid. 
 			String[] elements = given.split(","); //O(n) where n is the length of the string.
 			int verify = 0;
