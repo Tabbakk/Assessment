@@ -8,17 +8,22 @@ public class Tree {
 	
 	public static void main(String[] args){
 
+		String input = ""; //manually insert input string here if console input is commented out
+				
+//###################### comment out this section if you don't want to manually input strings #####################
+		
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 		// Reading data using readLine
 		System.out.print("Insert pattern: ");
-		String input = "";
 		try {
 			input = reader.readLine();
 		} 
 		catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+//##################################################################################################################
 			
 		if(verifyTree(input)) {
 			printTree(input);
